@@ -98,7 +98,7 @@ class _AnimationScreenState extends State<AnimationScreen> {
                   left: createPosition(width, items).dx,
                   top: createPosition(width, items).dy,
                   child: Container(
-                    padding: EdgeInsets.all(2),
+                    //  padding: EdgeInsets.all(2),
                     child: Container(color: Colors.white),
                   ),
                 ),
@@ -132,7 +132,7 @@ class _AnimationScreenState extends State<AnimationScreen> {
                   child: Container(
                     width: setBoxSizeSide(width),
                     height: setBoxSizeSide(width),
-                    padding: EdgeInsets.all(2),
+                    //  padding: EdgeInsets.all(2),
                     child: Container(color: CustomGrid.colors[index]),
                   ),
                 ),
@@ -147,7 +147,10 @@ class _AnimationScreenState extends State<AnimationScreen> {
     return Container(
       width: setBoxSizeSide(width),
       height: setBoxSizeSide(width),
-      child: Container(margin: EdgeInsets.all(2), color: addBGColor(grid)),
+      child: Container(
+        //margin: EdgeInsets.all(2),
+        color: addBGColor(grid),
+      ),
     );
   }
 
